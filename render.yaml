@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: semesterproject
+    env: python
+    branch: main
+    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --noinput
+    startCommand: gunicorn CollegeERP.wsgi:application --bind 0.0.0.0:$PORT
+    plan: free
