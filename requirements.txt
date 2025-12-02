@@ -4,3 +4,7 @@ djangorestframework
 djoser
 pytz
 sqlparse
+gunicorn
+whitenoise
+psycopg2-binary
+dj-database-url
